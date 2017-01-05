@@ -281,8 +281,10 @@ public class DecisionTree {
 				}
 			} else {
 
-				if (!rows.get(counter))
+				if (!rows.get(counter)){
+					 counter++; 
 					continue;
+				}
 
 				String[] cols = line.split("\\|");
 
